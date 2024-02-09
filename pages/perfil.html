@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Peruano</title>
+    <link rel="icon" type="image/x-icon" href="../resources/img/FlagofPeru_6428.ico">
+    <link rel="stylesheet" href="../resources/styles/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Headland+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nombreEmpresa"><a href="../index.html"><h1>Restaurante Mama Quilla</h1></a></div>
+            <ul>
+                <li><a href="./platos.html">Platos</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./ubicanos.html">Ubícanos</a></li>
+            </ul>
+            <a href="#"><img src="../resources/img/profile_icon64.png"></a>
+        </nav>
+    </header>
+    <main>
+        <h2>Regístrate</h2>
+        <form method="POST">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label>Nombre: </label>
+                <input type="text" placeholder="Fulano" required>
+                <label>Apellido: </label>
+                <input type="text" placeholder="Gonzales" required>
+                <label>Sexo: </label>
+                <input id="masc" type="radio" name="sexo">Masculino
+                <input id="fem" type="radio" name="sexo">Femenino
+            </fieldset>
+            <fieldset>
+                <legend>Datos de contacto</legend>
+                <label>Número de teléfono: </label>
+                <input type="text">
+                <label>Correo-e: </label>
+                <input type="email" placeholder="tu-correo@tu-dominio.com">
+            </fieldset>
+            <fieldset>
+                <legend>Datos de seguridad</legend>
+                <label>Contraseña: [a-z0-5]{8,}</label>
+                <input type="password" pattern="[a-z0-5]{8,}" required>
+                <label>Pregunta de seguridad: </label>
+                <select>
+                    <option value="">Elige una pregunta</option>
+                    <option value="1">¿Cuál fue el nombre de tu primera mascota?</option>
+                    <option value="2">¿Cómo se llama tu mejor amigo?</option>
+                    <option value="3">¿Qué secreto oculta la piedra de Rosetta? 😲</option>
+                </select>
+                <label>Respuesta de seguridad: </label>
+                <input type="text" placeholder="Ingresa aquí tu respuesta">
+                <br>
+                <input type="checkbox"> Aceptas todos los terminos y condiciones
+            </fieldset>
+            <input type="submit">
+        </form>
+    </main>
+    <footer>
+        <p>© Copyright 2024 | Alvaro Girón</p>
+    </footer>
+</body>
+</html>
