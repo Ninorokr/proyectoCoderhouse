@@ -17,6 +17,18 @@ h2 {
   text-align: center;
 }
 
+footer {
+  position: fixed;
+  margin: 20px;
+  fill: purple;
+  border-width: 2px;
+  border-color: black;
+}
+footer p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30;
+}
+
 .nombreEmpresa {
   margin: 1em;
   display: inline-block;
@@ -73,62 +85,6 @@ main article img {
   height: 200px;
 }
 
-.platos1 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.platos2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-footer {
-  position: fixed;
-  margin: 20px;
-  fill: purple;
-  border-width: 2px;
-  border-color: black;
-}
-footer p {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 30;
-}
-
-.restaurantes {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  height: 80%;
-  margin: 20px auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
-.restaurantes article {
-  margin: 50px;
-  text-align: center;
-  opacity: 50%;
-}
-.restaurantes article:hover {
-  margin: 50px;
-  opacity: 100%;
-}
-
-.historia figure {
-  width: 29%;
-  height: auto;
-  display: inline-block;
-  vertical-align: middle;
-}
-.historia p {
-  width: 70%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  display: inline-block;
-  text-align: center;
-}
-
 iframe {
   margin-left: 40%;
   margin-right: 60%;
@@ -167,6 +123,18 @@ input {
   grid-auto-flow: row;
   grid-template-areas: "header header header" "section-A section-A aside" "section-B section-B aside" "article-1 article-2 aside" "footer footer footer";
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.platos1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.platos2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .header {
@@ -259,6 +227,38 @@ input {
   display: inline;
   background-color: rgba(128, 128, 128, 0.692);
   color: white;
+}
+
+.restaurantes {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  height: 80%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.restaurantes article {
+  margin: 50px;
+  text-align: center;
+  opacity: 50%;
+}
+.restaurantes article:hover {
+  margin: 50px;
+  opacity: 100%;
+}
+
+.historia figure {
+  width: 29%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+.historia p {
+  width: 70%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: inline-block;
+  text-align: center;
 }
 
 /*# sourceMappingURL=estilos.css.map */
