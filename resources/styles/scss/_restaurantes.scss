@@ -1,6 +1,8 @@
+@import 'variables';
+
 .restaurantes {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-top: 2px solid $colorNegro;
+    border-bottom: 2px solid $colorNegro;
     height: 80%;
     margin: 20px auto;
     display: grid;

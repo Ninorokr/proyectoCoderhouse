@@ -1,3 +1,5 @@
+@import 'variables';
+
 * {
     margin: 0;
     padding: 0;
@@ -20,9 +22,9 @@ h2 {
 footer {
     position: fixed;
     margin: 20px;
-    fill: purple;
+    fill: $colorMorado;
     border-width: 2px;
-    border-color: black;
+    border-color: $colorNegro;
 
     p {
         font-family: 'Courier New', Courier, monospace;
@@ -52,7 +54,7 @@ nav {
 
 a {
     text-decoration: none;
-    color: black;
+    color: $colorNegro;
 }
 
 .fondo {
