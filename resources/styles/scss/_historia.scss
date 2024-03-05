@@ -12,4 +12,23 @@
         display: inline-block;
         text-align: center;
     }
+
+    
+}
+
+@media (width < 400px) {
+
+    figure {
+        width: 350px;
+    }
+
+    p {
+        width: 350px;
+    }
+
+    iframe {
+        margin: auto;
+        width: 150px;
+    }
+
 }

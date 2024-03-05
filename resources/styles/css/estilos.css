@@ -5,7 +5,11 @@
 }
 
 header {
-  margin: 20px;
+  padding: 20px;
+  /* position: fixed;
+   display: block;
+   background: white;
+   z-index: 5;*/
 }
 
 h1 {
@@ -32,14 +36,17 @@ footer p {
 .nombreEmpresa {
   margin: 1em;
   display: inline-block;
-  padding-right: 15em;
+  /*padding-right: 15em;*/
 }
 
 ul {
   display: inline-block;
-  padding-left: 15em;
+  padding-left: 9em;
 }
 
+nav {
+  width: 100%;
+}
 nav li {
   display: inline-block;
   list-style: none;
@@ -52,16 +59,26 @@ a {
   color: black;
 }
 
+.correccion1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
 .fondo {
   z-index: 0;
-  margin: 20px;
+  /*margin: 20px;*/
   width: 100%;
   height: 720px;
   background-image: url("../../img/lomoSaltado.png");
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 40%;
-  position: fixed;
+  /*opacity: 40%;*/
+  filter: contrast(0.5);
+  display: flex;
+  /*position: fixed;*/
+  background-position: center;
 }
 
 main {
@@ -73,6 +90,9 @@ main p {
   text-align: center;
   /*padding: 300px;*/
   font-size: 52px;
+  display: block;
+  margin: auto;
+  /*background-position: center;*/
 }
 main article {
   margin: 10px;
@@ -142,7 +162,7 @@ input {
   grid-area: header;
   background: no-repeat url("../../img/adoboDeChancho.png");
   background-position: center;
-  background-size: 50% 100%;
+  background-size: cover;
   background-color: aqua;
 }
 .header h2 {
@@ -155,7 +175,7 @@ input {
   grid-area: section-A;
   background: no-repeat url("../../img/ajiDeGallina.png");
   background-position: center;
-  background-size: 50% 100%;
+  background-size: cover;
   background-color: blueviolet;
 }
 .section-A h2 {
@@ -168,7 +188,7 @@ input {
   grid-area: section-B;
   background: no-repeat url("../../img/bistecALoPobre.png");
   background-position: center;
-  background-size: 50% 100%;
+  background-size: cover;
   background-color: coral;
 }
 .section-B h2 {
@@ -181,7 +201,7 @@ input {
   grid-area: article-1;
   background: no-repeat url("../../img/caldoDeGallina.png");
   background-position: center;
-  background-size: 50% 100%;
+  background-size: cover;
   background-color: rgb(255, 57, 57);
 }
 .article-1 h2 {
@@ -194,7 +214,7 @@ input {
   grid-area: article-2;
   background: no-repeat url("../../img/cebiche.png");
   background-position: center;
-  background-size: 50% 100%;
+  background-size: cover;
   background-color: burlywood;
 }
 .article-2 h2 {
@@ -221,7 +241,7 @@ input {
   background: no-repeat url("../../img/pescadoALoMacho.png");
   background-size: cover;
   background-position: center;
-  background-size: 50% 100%;
+  background-size: cover;
   background-color: darkcyan;
 }
 .footer h2 {
@@ -249,6 +269,12 @@ input {
   opacity: 100%;
 }
 
+@media (width < 400px) {
+  .restaurantes {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+}
 .historia figure {
   width: 29%;
   height: auto;
@@ -260,6 +286,19 @@ input {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: inline-block;
   text-align: center;
+}
+
+@media (width < 400px) {
+  figure {
+    width: 350px;
+  }
+  p {
+    width: 350px;
+  }
+  iframe {
+    margin: auto;
+    width: 150px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
